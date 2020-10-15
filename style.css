@@ -20,6 +20,7 @@ h3 {
     background-color: #000000;
     width: 100%;
     overflow: hidden;
+    z-index: 1;
 }
 
 .nav a {
@@ -255,13 +256,3 @@ hr {
    
    
 }
-
-@media screen and (max-width: 600px) {
-    
-
-
-@media screen and (max-width: ){
-
-}
-
-
