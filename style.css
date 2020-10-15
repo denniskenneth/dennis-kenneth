@@ -93,6 +93,7 @@ margin-top: 0.2em;
     transform: translateX(50%);
 }
 .left,.right {
+    position: relative;
     transition: opacity 250ms ease-in,
     transform 400ms ease-in;
     opacity: 0;
