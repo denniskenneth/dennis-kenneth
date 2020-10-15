@@ -1,0 +1,266 @@
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+/* GENERAL STYLING FOR WHOLE PAGE */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif, Arial, Helvetica;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+h3 {
+    text-align: center;
+    
+}
+
+/* STYLING FOR GENERAL NAVIGATION BAR */
+.nav {
+    background-color: #000000;
+    width: 100%;
+    overflow: hidden;
+}
+
+.nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* STYLING FOR LOGO IMAGE ON LEFT SIDE OF NAVIGATION BAR */
+.nav a img {
+    height: 1.7em;
+    width: 1.7em;
+    margin-left: 1em;
+    padding-top: 0.35em;
+}
+
+
+/* RIGHT SIDE OF NAVIGATION BAR */
+.nav-right {
+    float: right;
+}
+
+
+
+.nav-right a {
+font-size: 1.3em;
+margin-right: 1em;
+margin-top: 0.2em;
+}
+
+.nav-right a:hover {
+    background-color: #f2f2f2;
+    color: #000000;
+}
+
+.nav-right a:active {
+    color: #228822;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+    /* ANIMATION */
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+.fade-in.appear {
+    opacity: 1;
+}
+.right {
+    transform: translateX(-10%);
+}
+.left {
+    transform: translateX(50%);
+}
+.left,.right {
+    transition: opacity 250ms ease-in,
+    transform 400ms ease-in;
+    opacity: 0;
+}
+.right.appear, .left.appear{
+    transform:  translateX(0);
+    opacity: 1;
+}
+
+/* COLOUR STYLING FOR BODY CLASS */
+body {
+    background-color: #228822;
+    overflow-x: hidden;
+}
+
+.body {
+    
+    margin-left: 1.7em;
+    font-size: 4em;
+    padding: 1.5em 0 0.3em 0;
+    height: 90vh;
+    animation: transitionIn 1s;
+} 
+.body p {
+    padding: 0.2em;
+    line-height: 10vh;
+}
+
+.black-txt {
+    color: #000000;
+}
+
+
+  /* STYLING FOR SKILLS */
+
+  #myProgress {
+    width: 97%;
+    background-color: #ddd;
+  }
+  
+  #myBar {
+    width: 70%;
+    height: 30px;
+    background-color: #4CAF50;
+  }
+  .skill {
+      font-size: 2.5em;
+      margin-left: 1.7em;
+      margin-bottom: 5em;
+      height: 80vh;
+  }
+
+
+    /* STYLING IMG SECTION */
+.image {
+    margin-bottom: 5em;
+    
+}
+.image h3 {
+    font-size: 2.5em;
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+img {
+    width: 40%;
+    height: 30%;
+    padding: 1em;
+}
+
+  /* WORK EXPERIENCE AREA */
+  .exp {
+    margin: 5em 0;
+    text-align: center;
+  }
+  .exp h3 {
+      font-size: 3.5em;
+  }
+
+  .exp p {
+    font-size: 2.5em;
+}
+
+  .holder {
+      display: flex;
+      justify-content: center;
+  }
+
+  .spaceAm {
+      padding: 2em;
+
+  }
+
+  
+
+
+/* STYLING FOR CONTACT AREA */
+hr {
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    border-top: 0.01em solid #000;
+    width: 80%;
+}
+.contact {
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 0em;
+}
+
+.contact p {
+    font-size: 1.5em;
+}
+
+.socials {
+    text-align: center;
+}
+.socials a img {
+    height: 2.5em;
+    width: 2.5em;
+    padding: 1.2em 1.2em 0 0;
+}
+
+/* ======== RESOPONSIVE STYLING ========= */
+@media screen and (max-width: 704px){
+    .body {
+        margin-top: 2em ;
+        font-size: 2em;
+    }
+    .skill #txt p {
+        font-size: 1em;
+    }
+
+    .exp p {
+        font-size: 2em;
+    }
+    .contact p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+   .nav-right a{
+    font-size: 1em;
+    margin-top: 0.5em;
+   }
+   .row {
+       flex-direction: column;
+       align-items: center;
+       
+   }
+   .row img {
+       padding: 1em;
+       flex: 5;
+       height: 90%;
+       width: 90%;
+   }
+   
+   
+}
+
+@media screen and (max-width: 600px) {
+    
+
+
+@media screen and (max-width: ){
+
+}
+
+
